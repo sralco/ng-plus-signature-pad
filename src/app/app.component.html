@@ -1,0 +1,9 @@
+
+<ng-signature-pad
+  doneButtonText="Show Image"
+  format="base64"
+  (done)="showImage($event)">
+</ng-signature-pad>
+
+
+<img [src]="signatureImage" *ngIf="signatureImage" />
